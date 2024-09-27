@@ -1699,8 +1699,8 @@ hr {
 }
 
 .contact-section .contact-form .form-submit #contact-submit.success {
-    background-color: #28a745!important;
-    border-color: #28a745!important
+    background-color: #dc3545!important;
+    border-color: #dc3545!important
 }
 
 .contact-section .contact-form .form-submit #contact-submit.error {
@@ -1715,7 +1715,7 @@ hr {
 }
 
 .contact-section .contact-form .form-submit .contact-feedback.success {
-    color: #28a745
+    color: #dc3545
 }
 
 .contact-section .contact-form .form-submit .contact-feedback.error {

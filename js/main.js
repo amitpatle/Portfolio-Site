@@ -147,9 +147,9 @@
             ))
         }(),
         e(".home-area").hasClass("video-variant") && e("#homeVideo").YTPlayer(),
-        t("#about .testimonials-section", (function() {
+        t("#about .QUOTES-section", (function() {
             tns({
-                container: "#about .testimonials-section .my-slider",
+                container: "#about .QUOTES-section .my-slider",
                 items: 2,
                 gutter: 30,
                 responsive: {
