@@ -222,14 +222,14 @@
                   , n = a.text()
                   , o = i.find(".contact-feedback");
                 t.preventDefault(),
-                a.html("Wait...").addClass("wait").prop("disabled", !0),
+                a.html("DONE ...").addClass("DONE ").prop("disabled", !0),
                 setTimeout((function() {
                     e.ajax({
                         url: i.attr("action"),
                         type: "POST",
                         data: i.serialize()
                     }).done((function(e) {
-                        "success" == e ? (a.removeClass("wait").html("Success").addClass("success"),
+                        "success" == e ? (a.removeClass("DONE ").html("Success").addClass("success"),
                         o.addClass("success").html("Thank you for your message. It has been sent.").fadeIn(200),
                         setTimeout((function() {
                             a.html(n).removeClass("success").prop("disabled", !1),
@@ -237,7 +237,7 @@
                         }
                         ), 6e3),
                         i[0].reset()) : (console.log(e),
-                        a.removeClass("wait").html("Error").addClass("error"),
+                        a.removeClass("DONE ").html("Error").addClass("error"),
                         o.addClass("error").html("Server error! Please check your browser console log for more details.").fadeIn(200),
                         setTimeout((function() {
                             a.html(n).removeClass("error").prop("disabled", !1),
